@@ -50,7 +50,7 @@ This repository documents my daily progress in **Data Structures & Algorithms (C
 ## 📢 Connect with Me
 I document my weekly learnings and insights on LinkedIn. Let's connect!
 <br>
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/akamal-shaikh-1317b322a/)
+[![LinkedIn]([https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/akamal-shaikh-1317b322a/](https://www.linkedin.com/in/akamal-shaikh-22bb08382/))
 
 ---
 *Last Updated: December 2025*

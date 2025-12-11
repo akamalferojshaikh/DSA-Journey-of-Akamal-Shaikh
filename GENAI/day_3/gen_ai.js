@@ -1,21 +1,32 @@
 import { GoogleGenAI } from "@google/genai";
 import 'dotenv/config';
+import readlineSync from 'readline-sync';
 
-// FIX: Wrap the API key in an object
-const ai = new GoogleGenAI({ apiKey: "" }); 
+
+const ai = new GoogleGenAI({ apiKey: "" });
 
 async function main(){
-    const response = await ai.models.generateContent({
-        // NOTE: You don't need to pass apiKey again here inside generateContent
-        model: "gemini-2.0-flash", 
-        systemInstruction: `You are a coding ai agent.
-        - don't answer to other things related questions 
-        - answer only coding related questions 
-        - if anyone asks anything else, refuse to answer`,
-        contents: [{ role: "user", parts: [{ text: "what is array" }] }],
+    const chat = await ai.chats.create({
+        model: "gemini-2.5-flash", 
+        history:[]
+    
     });
 
-    console.log("Ai--->", response.text);
+    while(true){
+        const question = readlineSync.question("ask me a question:  ");
+
+        if (question == "exit"){
+            break;
+        }
+
+        const response = await chat.sendMessage({
+            message:question,
+        })
+        console.log("Ai--->", response.text);
+    }
+
 }
 
-main();
+await main();
+
+

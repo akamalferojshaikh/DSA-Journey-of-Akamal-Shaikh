@@ -64,18 +64,18 @@ int main()
     //   1234321
     //  123454321
 
-    for(int i=1; i<=5; i++){
-        for(int space = 4; space>=i; space--){
-            cout<<" ";
-        }
-        for(int incr=1;incr<=i;incr++){
-            cout<<incr;
-        }
-        for(int decr=i-1; decr>=1; decr--){
-            cout<<decr;
-        }
-        cout<<endl;
-    }
+    // for(int i=1; i<=5; i++){
+    //     for(int space = 4; space>=i; space--){
+    //         cout<<" ";
+    //     }
+    //     for(int incr=1;incr<=i;incr++){
+    //         cout<<incr;
+    //     }
+    //     for(int decr=i-1; decr>=1; decr--){
+    //         cout<<decr;
+    //     }
+    //     cout<<endl;
+    // }
 
     // for(int i=4;i>=1;i--){
     //     cout<<" ";
@@ -109,6 +109,6 @@ int main()
     // }
     // cout<<endl;
     
-
+    
     return 0;
 }

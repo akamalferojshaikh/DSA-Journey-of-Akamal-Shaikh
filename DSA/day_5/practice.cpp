@@ -53,6 +53,22 @@ int main(){
     // }
     // cout<<ans;
 
+    //prime nmber checker
+    // int num = 3, counter = 0;
 
+    // if (num <= 1)
+    //     cout << num << " is NOT prime";
+
+    // for(int i=1; i<=num; i++){
+    //     if(num % i ==0){
+    //         counter++;
+    //     }
+    // }
+    // if(counter >2){
+    //     cout<<"number is not prime";
+    // }
+    // else{
+    //     cout<<"nmber is prime";
+    // }
     return 0;
 }

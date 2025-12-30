@@ -3,7 +3,7 @@ import 'dotenv/config';
 import readlineSync from 'readline-sync';
 
 
-const ai = new GoogleGenAI({ apiKey: "" });
+const ai = new GoogleGenAI({ apiKey: process.env.GOOGLE_API_KEY });
 
 async function main(){
     const chat = await ai.chats.create({

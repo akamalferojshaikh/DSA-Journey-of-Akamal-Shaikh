@@ -24,7 +24,7 @@ This repository documents my daily progress in **Data Structures & Algorithms (C
 | **C++ Basics** | ✅ | Compilation process, Binary, Data Types & Sizes |
 | **Control Flow** | ✅ | `if-else`, Loops, Nested Loops |
 | **Pattern Printing** | ✅ | Logic building with complex star patterns |
-| **Arrays & Vectors** | ⏳ | *In Progress* |
+| **Arrays & Vectors** | ✅ |
 | **Time Complexity** | ⏳ | *In Progress* |
 
 ### 2️⃣ Generative AI Engineering 🤖

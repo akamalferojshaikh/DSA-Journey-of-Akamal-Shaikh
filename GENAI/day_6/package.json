@@ -1,0 +1,17 @@
+{
+  "name": "day_6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "readline-sync": "^1.4.10"
+  }
+}

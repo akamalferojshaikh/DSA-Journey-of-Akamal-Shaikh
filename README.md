@@ -25,7 +25,7 @@ This repository documents my daily progress in **Data Structures & Algorithms (C
 | **Control Flow** | ✅ | `if-else`, Loops, Nested Loops |
 | **Pattern Printing** | ✅ | Logic building with complex star patterns |
 | **Arrays & Vectors** | ✅ |
-| **Time Complexity** | ⏳ | *In Progress* |
+| **Time Complexity** |  ✅
 
 ### 2️⃣ Generative AI Engineering 🤖
 *Building the "brain" and "hands" for AI applications.*

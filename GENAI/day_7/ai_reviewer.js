@@ -53,13 +53,13 @@ async function writeFile({ file_path, content }) {
 }
 
 const tools = {
-  'list_files': listFiles,
-  'read_file': readFile,
-  'write_file': writeFile,
+  listFiles,
+  readFile,
+  writeFile,
 };
 
 const listFilesTool = {
-  name: "list_files",
+  name: "listFiles",
   description: "Get all javascript files in a directory",
   parameters: {
     type: Type.OBJECT,
@@ -74,7 +74,7 @@ const listFilesTool = {
 };
 
 const readFileTool = {
-  name: "read_file",
+  name: "readFile",
   description: "Read a file's content",
   parameters: {
     type: Type.OBJECT,
@@ -89,7 +89,7 @@ const readFileTool = {
 };
 
 const writeFileTool = {
-  name: "write_file",
+  name: "writeFile",
   description: "Write fixed content back to a file",
   parameters: {
     type: Type.OBJECT,
@@ -106,6 +106,8 @@ const writeFileTool = {
     required: ["file_path", "content"],
   },
 };
+
+// const History = [];
 
 async function runAgent(directoryPath) {
   const History = [
@@ -178,10 +180,10 @@ async function runAgent(directoryPath) {
 
         for(const functionCall of result.functionCalls){
             const {name,args} = functionCall; 
-            console.log(`${name}`);
+            // console.log(`${name}`);
 
             const toolResponse = await tools[name](args);
-        
+         // Send the function response back to the model.
         History.push({
             role:'model',
             parts:[{functionCall}],
@@ -191,7 +193,7 @@ async function runAgent(directoryPath) {
             role:"user",
             parts:[{
                 functionResponse:{
-                    name,
+                    name:functionCall.name,
                     response:{result:toolResponse}
                 }
             }]

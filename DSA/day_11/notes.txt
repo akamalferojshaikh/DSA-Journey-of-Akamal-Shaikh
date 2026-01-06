@@ -1,0 +1,5 @@
+discussed about time and space complexity
+
+notations
+
+complexities-best,worst,average
